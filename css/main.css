@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    font-size: 100%;
+}
+body {
+    background: black;
+    color: #fff;
+    cursor: auto;
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+a {
+    color: #d8ff00;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*remove gray in iOS*/
+}
+a:hover {
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    letter-spacing: 0.09375em;
+}
+p, .nav li {
+    letter-spacing: 0.03em;
+}
+hr {
+    border: 1px solid #fff;
+    border-top: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.animate {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+::-moz-selection {
+    background: #aaa;
+}
+::selection {
+    background: #aaa;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#faces img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#black {
+    background-color: black;
+    opacity: .2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logoOverlay {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* MOBILE(L)================================================================= */
+
+@media screen and (min-width: 568px) {
+}
+
+    
+/* TABLET(P)================================================================= */
+
+@media screen and (min-width: 640px) {
+}
+
+
+/* TABLET(L)================================================================= */
+
+@media screen and (min-width: 960px) {
+}
+
+
+/* DESKTOP=================================================================== */
+
+@media screen and (min-width: 1280px) {
+}
