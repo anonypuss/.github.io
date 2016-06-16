@@ -2,34 +2,47 @@
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <title>A N O N Y P U S S</title>
-        <meta name="description" content="Hacking society since SS16">        
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+        <title>ANONYPUSS</title>
+        <meta name="description" content="Anonypuss rose from a society terrorized by personal security threats and obsessed with internet cats.">
+        <link rel="stylesheet" type="text/css" href="css/foundation.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-<!--        GOOGLE FONT        -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://use.fontawesome.com/2f58f62e9e.js"></script>
         <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/favicon.ico">
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-        <script type="application/ld+json">
-        {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "url": "http://anonypuss.xyz",
-        "logo": "http://anonypuss.xyz/apple-touch-icon.png"
-        }
-        </script>
     </head>
     
     <body>
-        <div id="faces"></div>
-        <div id="black"></div>
-        <img id="logoOverlay" src="img/AnonypussOverlay.svg">
+        <nav>
+            <img id="navName" class="animate" src="img/AP-Logo_Name-White-160614.svg">
+<!--
+            <a id="navInsta" href="http://www.instagram.com/anonypuss_xyz" target="_blank">
+                <i id="navInsta" class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+-->
+        </nav>
         
+        <div id="faces"></div>
+        <div id="black">
+            <a class="btn" href="http://www.instagram.com/anonypuss_xyz" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp; Creep our Insta</a>
+        </div>
+        <img id="logoOverlay" src="img/AP-Face-Overlay.svg" draggable="false">
+        
+        <div id="mission">
+            <h1 class="animate">Anonypuss<br>rose from a society terrorized by personal security threats and obsessed with internet cats.</h1>
+        </div>
+        <div id="merch">
+            <h2 class="animate">Swag.<br>coming.<br>soon.</h2>
+        </div>
+                
+        <footer class="animate">Anonypuss&trade; and the Anonypuss Face are Trademarks of the Anonypuss.</footer>
         
         <script src="js/jquery.js"></script>
         <script src="js/jquery.animateImages.min.js"></script>
         <script>
             $(function () {
-                $("#faces").animateImages("img/faces/anonypuss-face-@.jpg", 46, 150);
+                $("#faces").animateImages("img/faces/anonypuss-face-@.jpg", 46, 250);
             });
         </script>
     </body>

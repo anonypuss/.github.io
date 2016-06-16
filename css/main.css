@@ -3,10 +3,10 @@ html, body {
     font-size: 100%;
 }
 body {
-    background: black;
-    color: #fff;
+    background: white;
+    color: black;
     cursor: auto;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -14,40 +14,64 @@ body {
     padding: 0;
     position: relative;
 }
-a {
-    color: #d8ff00;
-    text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*remove gray in iOS*/
-}
-a:hover {
-    color: #fff;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    letter-spacing: 0.09375em;
-}
-p, .nav li {
-    letter-spacing: 0.03em;
-}
-hr {
-    border: 1px solid #fff;
-    border-top: none;
-}
 img {
     display: block;
-    width: 100%;
 }
 .animate {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.btn {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+/*
 ::-moz-selection {
     background: #aaa;
 }
 ::selection {
     background: #aaa;
+}
+*/
+
+
+/* -------------------------------------------------------------------------- */
+
+nav {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+#navName {
+    height: 26px;
+    float: left;
+}
+a svg#navEtsy {
+    height: 18px;
+    float: right;
+    margin: 6px 16px 0;
+}
+a svg#navEtsy path {
+    transition: .3s;
+    fill: #fff;
+}
+a:hover svg#navEtsy path {
+    fill: #F56400;
+}
+a#navInsta {
+    color: #fff;
+    font-size: 28px;
+    line-height: 0;
+    float: right;
+}
+a#navInsta:hover {
+    color: #e4405f;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -55,24 +79,75 @@ img {
 #faces img {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 #black {
-    background-color: black;
-    opacity: .2;
+    background-color: rgba(0,0,0,.75);
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
+}
+#black .btn {
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    top: 88%;
+    transform: translateY(-50%);
+}
+#black .btn i {
+    font-size: 30px;
+    position: relative;
+    top: 4px;
+}
+#black .btn:hover, #black .btn:focus {
+    color: #e4405f;
 }
 #logoOverlay {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#mission h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    padding: 50px 20px 80px;
+    width: 258px;
+}
+#mission:before {
+    content: '';
+    display: block;
+    background-color: aquamarine;
+    height: 12px;
+    position: relative;
+    top:80px;
+    width: 87vw;
+    z-index: -1;
+    transition: .3s;
+}
+#merch {
+    color: #fff;
+    background-color: deeppink;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: right;
+    padding: 80px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 8px;
+    color: #666;
 }
 
 /* MOBILE(L)================================================================= */
@@ -84,16 +159,70 @@ img {
 /* TABLET(P)================================================================= */
 
 @media screen and (min-width: 640px) {
+    #navName {
+        height: 38px;
+    }
+    #mission h1 {
+        padding: 70px 10% 110px;
+        font-size: 34px;
+        width: 450px;
+    }
+    #mission:before {
+        height: 14px;
+        top: 107px;
+    }
+    #merch {
+        padding-right: 13%;
+        font-size: 48px;
+    }
+    footer {
+        padding: 10px;
+        font-size: 10px;
+    }
 }
 
 
 /* TABLET(L)================================================================= */
 
 @media screen and (min-width: 960px) {
+    #mission h1 {
+        padding-left: 17%
+    }
+    #black .btn {
+        font-size: 18px
+    }
+    #black .btn i {
+        font-size: 34px;
+        top: 6px;
+    }
 }
 
 
 /* DESKTOP=================================================================== */
 
 @media screen and (min-width: 1280px) {
+    nav {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #navName {
+        height: 52px;
+    }
+    #mission h1 {
+        font-size: 52px;
+        width: 700px;
+        padding: 90px 17% 140px;
+    }
+    #mission:before {
+        height: 24px;
+        top: 149px;
+    }
+    #merch {
+        padding-right: 13%;
+        font-size: 64px;
+    }
+    footer {
+        font-size: 12px;
+    }
 }
